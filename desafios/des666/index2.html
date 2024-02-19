@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 2</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder black;
+
+        }
+        p{font-weight: lighter;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            font: 16px;
+        }
+        .normal{
+            font-weight: bold;
+            color: rgba(116, 5, 5, 0.781);
+        }
+        .medio{
+            font-weight: bold;
+            color: red;
+        }
+        .especial{
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+        .especial::after{
+            content:'>>';
+            color: white;
+        }
+        .especial::before{
+            content: '<<';
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>Para aprendeR HTML5, acesse  o <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank" rel="external"><span class="normal
+        ">Githubdoguanabara</span></a></p>
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do <span class="medio">escritório do W3C no Brasil</span></p>
+    <p>Para acompanhar os cursos, acesse o <span class="especial">canal do Cursoemvideo</span> </p>
+</body>
+</html>
